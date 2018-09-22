@@ -42,3 +42,5 @@ Route::delete('/emptyCart','CartController@emptyCart');
 //Checkout
 Route::get('/checkout','CartController@show');
 Route::post('/checkout','CartController@save');
+//Orders
+Route::get('/orders','OrdersController@index');

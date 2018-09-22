@@ -17,6 +17,7 @@ class CreateOrderItemsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->integer('item_id')->unsigned()->index();
+            $table->integer('user_id')->unsigned()->index();
             $table->integer('quantity')->unsigned();
             $table->decimal('budget');
             $table->date('due_date')->nullable();
@@ -25,6 +26,7 @@ class CreateOrderItemsTable extends Migration
             $table->integer('order_id')->unsigned()->index();
             $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
             $table->foreign('item_id')->references('id')->on('items')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

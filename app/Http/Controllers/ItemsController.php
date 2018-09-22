@@ -53,6 +53,9 @@ class ItemsController extends Controller
             foreach ($request->images as $image) {
                 $file_name = random_string() . '.' . $image->extension();
                 $path = storage_path('app/items') . '/';
+                if(!is_dir(storage_path('app/items/'))){
+                    mkdir(storage_path('app/items/'),0777);
+                }
                 if (!file_exists($path . $file_name)):
                     Image::make($image)->heighten(1024, function ($constraint) {
                         $constraint->upsize();

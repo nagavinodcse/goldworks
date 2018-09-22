@@ -29,7 +29,7 @@
                         </div>
                         <div class="content has-text-centered">
                             <button class="button is-primary" v-if="!cartHas(item.id)" @click="addToCart(item.id,$event)" type="button">Add to Cart</button>
-                            <button class="button is-primary" v-if="cartHas(item.id)" type="button"><span class="icon"><i class="material-icons">done_all</i></span></button>
+                            <button class="button is-primary" v-if="cartHas(item.id)" type="button"><span class="icon"><i class="mdi mdi-check-all"></i></span></button>
                         </div>
                     </div>
                 </div>

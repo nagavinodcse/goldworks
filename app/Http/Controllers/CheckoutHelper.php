@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use App\Item;
 use App\Order;
 use App\OrderItem;
 use Carbon\Carbon;
@@ -22,9 +23,11 @@ trait CheckoutHelper
         $cart = $this->cart->items();
         if(!empty($cart)):
         foreach ($cart as $item):
+            $current = Item::find($item->id);
             $order->order_items()->create(['item_id'=>$item->id,
                 'quantity'=>$item->quantity,
                 'budget'=>$item->price,
+                'user_id'=>$current->user_id,
                 'due_date'=> !empty($item->due_date) ? Carbon::parse($item->due_date)->format('Y-m-d') : NULL,
             ]);
         endforeach;
