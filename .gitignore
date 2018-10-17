@@ -14,6 +14,7 @@ storage/*.key
 .env.*.php
 .env.php
 .env
+goldworks2.zip
 Homestead.yaml
 Homestead.json
 

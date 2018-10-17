@@ -8,12 +8,12 @@
 // Bootstrap
 //@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 //material icons
-@import "node_modules/material-design-icons/iconfont/material-icons";
+@import "~material-design-icons/iconfont/material-icons";
 // font awesome
-@import "node_modules/font-awesome/scss/font-awesome";
+@import "~font-awesome/scss/font-awesome";
 //buefy
-@import "node_modules/buefy/lib/buefy";
+@import "~buefy/dist/buefy.min.css";
 //Bulma
-@import "node_modules/bulma/bulma";
+@import "~bulma/bulma";
 @import "styles";
 @import url("//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css");

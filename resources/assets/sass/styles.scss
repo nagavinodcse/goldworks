@@ -125,9 +125,8 @@ body { overflow-y: visible; min-height: 10rem; }
 .is-at-right{position:absolute;right:0;}
 .is-at-left{position:absolute;left:0;}
 [class^='is-size-']{position:relative;}
-.order_details{
-  font-size:13px;
-}
+.order_details{font-size:13px;}
+.main-bg{background: url("/images/sg.jpg");}
 @media screen and (max-width: 767px){
   .container{padding-left:1em!important;padding-right: 1em!important;}
   .table.is-responsive{display: block;overflow-x: auto;}

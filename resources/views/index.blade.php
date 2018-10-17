@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div id="items">
+    <div id="items" class="main-bg">
         <div class="container">
             <item-grid :categories="{{ $categories->toJson() }}"></item-grid>
         </div>
