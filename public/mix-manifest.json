@@ -1,11 +1,11 @@
 {
     "/js/cart.js": "/js/cart.js",
     "/js/orders.js": "/js/orders.js",
-    "/js/items.js": "/js/items.js",
-    "/js/checkout.js": "/js/checkout.js",
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/js/users.js": "/js/users.js",
-    "/js/categories.js": "/js/categories.js",
+    "/js/items.js": "/js/items.js",
     "/js/common.js": "/js/common.js",
-    "/css/app.css": "/css/app.css"
+    "/js/checkout.js": "/js/checkout.js",
+    "/js/categories.js": "/js/categories.js"
 }
